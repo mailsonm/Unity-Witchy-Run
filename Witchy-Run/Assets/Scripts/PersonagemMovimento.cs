@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersonagemMovitento : MonoBehaviour
+public class PersonagemMovimento : MonoBehaviour
 {
     private float horizontalInput;
     private Rigidbody2D rb;
