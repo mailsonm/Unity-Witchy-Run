@@ -27,7 +27,7 @@ public class GeradorDeInimigos : MonoBehaviour
 
             for (int i = 0; i < quantidadeInimigos; i++)
             {
-                Instantiate(GetInimigo(), new Vector3(Random.Range(12.5f, 7.5f), Random.Range(-3.5f, 4.5f), 0), Quaternion.identity);
+                Instantiate(GetInimigo(), new Vector3(Random.Range(7.5f, 12.5f), Random.Range(-3.5f, 4.5f), 0), Quaternion.identity);
             }
 
             yield return new WaitForSeconds(4f);
