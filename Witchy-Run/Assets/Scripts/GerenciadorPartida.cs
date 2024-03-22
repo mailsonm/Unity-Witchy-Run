@@ -5,28 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GerenciadorPartida : MonoBehaviour
 {
-    private bool partidaIniciada;
-
-    private void Awake() 
+    private void Start()
     {
-        Time.timeScale = 1;
-        Application.targetFrameRate = 60;
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        if (partidaIniciada) return;
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            partidaIniciada = true;
-            Time.timeScale = 1;
-        }
+        Time.timeScale = 1f;
     }
 
-    public void ReiniciarPartida()
+    public void RecarregarJogo()
     {
-        SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
